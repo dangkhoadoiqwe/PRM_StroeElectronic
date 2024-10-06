@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "878630614025",
+    "firebase_url": "https://electronics-store-c0c9b-default-rtdb.firebaseio.com",
+    "project_id": "electronics-store-c0c9b",
+    "storage_bucket": "electronics-store-c0c9b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878630614025:android:35790fb60c2e9fe963b4d8",
+        "android_client_info": {
+          "package_name": "com.example.lab02.lab4.listview.customlistview.lab05.prm392_group_elecetronicstore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACo3kqRnCnRkSYsUBUqOkItC56IXK3ls0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
