@@ -225,151 +225,137 @@
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:layout_marginBottom="24dp"
         android:layout_marginStart="12dp"
         android:layout_marginEnd="12dp"
-        android:layout_marginBottom="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_gravity="bottom"
-            android:background="@drawable/green_button_bg" >
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/green_button_bg"
+            android:gravity="center">
 
+            <!-- Explorer Button -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="48dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <ImageView
-
-                        android:layout_width="22dp"
-                        android:layout_height="22dp"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="8dp"
-                        app:srcCompat="@drawable/btn_1" />
-
-                    <TextView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:text="Explorer"
-                        android:textAlignment="center"
-                        android:textColor="@color/white"
-                        android:textSize="10sp" />
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="48dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="48dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="373dp"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="48dp">
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="336dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:text="Cart"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="10sp" />
-
-                <TextView
-
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:text="My Order"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="10sp" />
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
 
                 <ImageView
-
                     android:layout_width="22dp"
                     android:layout_height="22dp"
-                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    app:srcCompat="@drawable/btn_1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Explorer"
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <!-- Cart Button -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
                     android:layout_marginTop="8dp"
                     app:srcCompat="@drawable/btn_2" />
 
-                <ImageView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cart"
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:textAlignment="center" />
+            </LinearLayout>
 
-                    android:layout_width="63dp"
+            <!-- Wishlist Button -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="22dp"
                     android:layout_height="22dp"
-                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    app:srcCompat="@drawable/btn_3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wishlist"
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <!-- My Orders Button -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
                     android:layout_marginTop="8dp"
                     app:srcCompat="@drawable/btn_4" />
 
                 <TextView
-                    android:id="@+id/textView8"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:text="Wish"
-                    android:textAlignment="center"
+                    android:text="My Orders"
+                    android:textSize="10sp"
                     android:textColor="@color/white"
-                    android:textSize="10sp" />
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <!-- Profile Button -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
 
                 <ImageView
-                    android:id="@+id/imageView4"
                     android:layout_width="22dp"
                     android:layout_height="22dp"
-                    android:layout_gravity="center"
                     android:layout_marginTop="8dp"
-                    app:srcCompat="@drawable/btn_3" />
+                    app:srcCompat="@drawable/btn_5" />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:textAlignment="center" />
             </LinearLayout>
-        </com.google.android.material.bottomnavigation.BottomNavigationView>
 
+        </LinearLayout>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
